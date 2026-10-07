@@ -1,0 +1,44 @@
+body{
+    background-color: #a9a9a9;  
+    font-family: Arial;
+      color: #000000;
+    }
+    
+    .logo{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    .logo img{
+        width: 72px;
+        height: 72px;
+        border-radius: 100%;
+        border: 2px solid #4c5357;
+    }
+
+    .infos{
+        text-align: center;
+        padding-top: 100px;
+        font-size: 18px;
+    }
+    
+    .infos img{
+        width: 180px;
+        border-radius: 10px;
+        border: 2px solid #4c5357;
+        margin-bottom: 15px;
+    }
+
+    .links{
+        text-align: center;
+    }
+    
+    .links a{
+        text-decoration: none;
+        color: #000000;
+        display: inline-block;
+        padding: 15px;
+        background-color: #918a8a;
+        border-radius: 30px;
+        font-size: 16px;
+    }
