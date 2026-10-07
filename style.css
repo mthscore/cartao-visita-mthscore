@@ -1,44 +1,93 @@
 body{
     background-color: #a9a9a9;  
     font-family: Arial;
-      color: #000000;
-    }
-    
-    .logo{
-        position: absolute;
-        top: 20px;
-        left: 20px;
-    }
-    .logo img{
-        width: 72px;
-        height: 72px;
-        border-radius: 100%;
-        border: 2px solid #4c5357;
+    color: #000000;
+    margin: 0;
+    min-height: 100vh;
     }
 
-    .infos{
-        text-align: center;
-        padding-top: 100px;
-        font-size: 18px;
+    /* LOGO */
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
     }
-    
-    .infos img{
-        width: 180px;
-        border-radius: 10px;
-        border: 2px solid #4c5357;
-        margin-bottom: 15px;
+.logo img{
+    width: 72px;
+    height: 72px;
+    border-radius: 100%;
+    border: 2px solid #4c5357;
     }
 
-    .links{
-        text-align: center;
+    /* INFOS */
+.infos{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 18px;
+    }   
+.infos img{
+    width: 180px;
+    border-radius: 10px;
+    border: 2px solid #4c5357;
+    margin-bottom: 15px;
+    max-width: 100%;
     }
-    
-    .links a{
-        text-decoration: none;
-        color: #000000;
-        display: inline-block;
-        padding: 15px;
-        background-color: #918a8a;
-        border-radius: 30px;
-        font-size: 16px;
+.infos h1{
+    margin: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    }
+.infos p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;   
+}
+.infos h2,
+.infos h3{
+    margin: 15px 0 15px;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: bold;
+    }
+
+    /* LINKS */
+.links{
+    text-align: center;
+    }
+.links a{
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+    padding: 15px;
+    width: 200px;
+    background-color: #918a8a;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    letter-spacing: 1px;
+    }
+.links a:hover{
+    background-color: #4c5357;
+    color: #000000;
+    }
+
+    @media (max-width: 600px) {
+        body {
+            overflow: hidden;
+        }
+
+        .infos img {
+            width: 150px;
+        }
+        .infos h1 {
+            font-size: 26px;
+        }
+        .links a {
+            width: 180px;
+        }
     }
