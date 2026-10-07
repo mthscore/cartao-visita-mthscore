@@ -77,17 +77,15 @@ body{
     }
 
     @media (max-width: 600px) {
-        body {
-            overflow: hidden;
+       
+        .infos img {
+        width: 150px;
         }
 
-        .infos img {
-            width: 150px;
-        }
         .infos h1 {
             font-size: 26px;
         }
         .links a {
-            width: 180px;
+            width: 180px; 
         }
     }
